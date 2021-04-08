@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Tweet-Assignment
+Version: 0.0.1
+Summary: Assignment On Python package
+Home-page: UNKNOWN
+Author: Chinmaya Devprasad
+Author-email: chinmayadevprasad1997@gmail.com
+License: UNKNOWN
+Description: This package used for cleaning tweets and represent them in standardize format.
+        This package contain 2 function one for cleaning your data and another for standardize your data.
+        For better output you have to give text column or only that variable that contain text otherwise it throws you error.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
