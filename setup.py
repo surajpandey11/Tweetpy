@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="Tweet_Assignment", # Replace with your own username
     version="0.0.1",
-    author="Chinmaya Devprasad",
-    author_email="chinmayadevprasad1997@gmail.com",
+    author="Suraj Pandey",
+    author_email="soorajhjcms@gmail.com",
     description="Assignment On Python package",
     long_description=long_description,
     long_description_content_type="text/markdown",

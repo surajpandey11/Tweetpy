@@ -4,8 +4,8 @@ from nltk.stem.porter import *
 
 import re
 class TweetClean:
-    def Clean_text(self,text):
-        stopwords = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself",
+    def Clean_tweet(self,text):
+        stopword = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself",
                      "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself", "it", "its", "itself",
                      "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that",
                      "these", "those", "am", "is", "are", "was", "were", "be", "been", "being", "have", "has", "had",
@@ -22,13 +22,13 @@ class TweetClean:
             text = re.sub(r'\s+', ' ', re.sub('[^a-zA-Z#]', ' ', text.strip().lower())).strip()
             text = re.sub(r'\W+', ' ', text.strip().lower()).strip()
             text = [word for word in text.split()]
-            text=[word for word in text if word not in stopwords]
+            text=[word for word in text if word not in stopword]
             text=' '.join(text)
             return text
         return []
 
 
-    def Standardize_text(self,text):
+    def Standardize_tweet(self,text):
         stemmer = PorterStemmer()
         text = [word for word in text.split()]
         text=[stemmer.stem(word) for word in text ]
